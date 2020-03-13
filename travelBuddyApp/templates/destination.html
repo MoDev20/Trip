@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destination</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <div class="container2">
+        <div class="header">
+            <ul>
+                <li class="logout"><a href="/logout">Logoff</a></li>
+                <li class="dash"><a class="active" href="/travels">Dashboard</a></li>
+                <li>Hey {{loggedUser.firstName}}: To travel is to discover that everyone is wrong about other countries.</li>
+            </ul>
+            </div>
+
+        <h3>Destination: {{travelPlans.dest}}</h3>
+        <p>Planned By: {{travelPlans.planner.firstName}} {{travelPlans.planner.lastName}}</p>
+        <p>Description: {{travelPlans.plan}}</p>
+        <p>Travel Date From: {{travelPlans.travelStartDate}}</p>
+        <p>Travel Date To: {{travelPlans.travelEndDate}}</p>
+
+        <h3>Other users joining the trip:</h3>
+
+        {% for traveler in travelPlans.join.all %}
+
+        <p>{{traveler.firstName}} {{traveler.lastName}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

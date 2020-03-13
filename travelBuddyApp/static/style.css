@@ -1,0 +1,236 @@
+.body1 {font-family: 'Crimson Text', serif;
+    background-image: url("clearBlue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body2 {font-family: 'Crimson Text', serif;
+    background-image: url("mandalaPatterns.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body3 {font-family: 'Crimson Text', serif;
+    background-image: url("beach.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+* {
+	box-sizing: border-box;   
+}
+
+.header{
+    width: auto;
+    height: 50px;
+	padding: 10px;
+    /* border: 1px solid blue; */
+    background-color:orange; 
+}
+li {
+    list-style-type: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+.p{
+    text-align: justify;
+}
+.logout,.dash{
+	float: right;
+}
+.W {
+margin-left: 1px;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+		
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.container1{
+    width: auto;
+    height: 1100px;
+    padding: 10px;
+    margin: 0;
+    /* background-image: url("clearBlue.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+}
+.container2{
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+.container3{
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    color:lightcoral;
+    margin: 10px;
+}
+
+.header{
+    width: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    color:black;
+    /* border: 1px solid blue; */
+  
+}
+li {
+    list-style-type: none;
+}
+.p{
+    font-size: medium;
+}
+.logout,.dash{
+    float: right;
+    margin: 10px
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    font-size: smaller;
+  }
+  th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    font-size: smaller;
+    width:50px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+}
+h3{
+    margin-top: 45px;
+} 
+.box1{
+	width: 700px;
+	padding: 10px;
+	/* border: 1px solid blue; */
+    margin: 10px;
+    display: inline-block;				
+}
+.box2{
+    width: 700px;
+	padding: 10px;
+	/* border: 1px solid brown; */
+    margin: 10px;
+    display: inline-block;
+    }
+.box3{
+    width: 700px;
+    padding: 10px;
+    /* border: 1px solid green; */
+    margin: absolute;
+    font-size: small;
+    display: inline-block;
+    vertical-align: top;
+}
+.box4{
+    width: 700px;
+    padding: 10px;
+    border: 1px solid black;
+    /* margin: 30px; */
+    font-size: small;
+    display: inline-block;
+    vertical-align: top;
+}
+.box5{
+    width: 1000px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    font-size: small;
+    display: inline-block;
+}
+
+.button1{
+	background-color:green; 
+	border: none;
+	color: white;
+	/* padding: 20px 40px; */
+	text-align: center;
+	display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.button2{
+	background-color:red; 
+	border: none;
+	color: white;
+    /* padding: 20px 50px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.button3{
+	background-color: burlywood; 
+	border: none;
+	color: white;
+	/* padding: 15px 40px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.button4{
+    background-color: brown; 
+	border: none;
+	color: white;
+	/* padding: 15px 40px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+input{
+    width: 200px;
+    height: 30px;
+    font-size:x-small;
+    border-radius: 10px;
+    margin-left: 7px;
+    text-align: center;
+
+}
+.add{
+    margin-left: 10px;
+}
+.message{
+    border-radius: 10px;
+    color: red
+;
+}

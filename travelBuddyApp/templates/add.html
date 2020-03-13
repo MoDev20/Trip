@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Add Plan</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body class = "body3">
+	<div class="container3">
+		<div class="header">
+			<ul>
+				<li class="logout"><a href="/logout">Logoff</a></li>
+				<li class="dash"><a class="active" href="/travels">Dashboard</a></li>
+				<li>Hey {{loggedUser.firstName}}: “The best education I have ever received was through travel.” – Lisa Ling</li>
+			</ul>
+			</div>
+
+		{% if messages %}
+		<ul class="messages">    
+			{% for message in messages %}    
+			<li class="message">{{ message }}</li>    
+			{% endfor %}
+		</ul>
+		<p>Please, add a trip plan</p>
+	{% endif %}
+		<br>
+		<form action="/addtrip" method="post">
+		{% csrf_token %}
+			Destination:
+			<p class="add"><input type="text" name="dest"></p>
+			Description:
+			<p class="add"> <textarea name="plan" id="" cols="50" rows="5"></textarea></p>
+			Travel Date From: 
+			<p class="add"><input type="date" name="sDate" id=""></p>
+			Travel Date To:
+			<p class="add"> <input type="date" name="eDate" id=""></p>
+			<br>
+			<input class = "button4" type="submit" value="Add">
+							
+		</form>
+
+	</div>
+</body>
+</html>
